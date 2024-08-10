@@ -58,14 +58,28 @@ Route::get('/pesandisini', function () {
 });
 Route::redirect('/contact', '/pesandisini');
 
-Route::get('/polinema/dosen', function () {
-    return '<h1> Daftar nama dosen </h1>';
-});
+// Route::get('/polinema/dosen', function () {
+//     return '<h1> Daftar nama dosen </h1>';
+// });
 
-Route::get('/polinema/tendik', function () {
-    return '<h1> Daftar nama tendik </h1>';
-});
+// Route::get('/polinema/tendik', function () {
+//     return '<h1> Daftar nama tendik </h1>';
+// });
 
-Route::get('/polinema/jurusan', function () {
-    return '<h1> Daftar nama jurusan </h1>';
+// Route::get('/polinema/jurusan', function () {
+//     return '<h1> Daftar nama jurusan </h1>';
+// });
+
+Route::prefix('/polinema')->group (function () {
+    Route::get('/dosen', function () {
+        echo '<h1> Daftar nama dosen </h1>';
+    });
+
+    Route::get('/tendik', function () {
+        echo '<h1> Daftar nama tendik </h1>';
+    });
+
+    Route::get('/jurusan', function () {
+        echo '<h1> Daftar nama jurusan </h1>';
+    });
 });
