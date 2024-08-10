@@ -36,3 +36,7 @@ Route::get('/about', function () {
 Route::get('/user/{name}', function ($name) {
     return 'Nama saya adalah ' . $name;
 });
+
+Route::get('/posts/{post}/{comment}', function ($post, $comment) {
+    return 'Pos ke-' . $post . ' dengan komentar ke-' . $comment;
+});
