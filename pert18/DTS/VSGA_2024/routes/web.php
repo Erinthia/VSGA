@@ -70,7 +70,21 @@ Route::redirect('/contact', '/pesandisini');
 //     return '<h1> Daftar nama jurusan </h1>';
 // });
 
-Route::prefix('/polinema')->group (function () {
+// Route::prefix('/polinema')->group (function () {
+//     Route::get('/dosen', function () {
+//         echo '<h1> Daftar nama dosen </h1>';
+//     });
+
+//     Route::get('/tendik', function () {
+//         echo '<h1> Daftar nama tendik </h1>';
+//     });
+
+//     Route::get('/jurusan', function () {
+//         echo '<h1> Daftar nama jurusan </h1>';
+//     });
+// });
+
+Route::prefix('/admin')->group (function () {
     Route::get('/dosen', function () {
         echo '<h1> Daftar nama dosen </h1>';
     });
