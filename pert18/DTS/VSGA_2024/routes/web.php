@@ -41,6 +41,6 @@ Route::get('/posts/{post}/{comment}', function ($post, $comment) {
     return 'Pos ke-' . $post . ' dengan komentar ke-' . $comment;
 });
 
-Route::get('/user/{name?}', function ($name=null) {
-    return 'Nama saya adalah ' . $name;
+Route::get('/kodebarang/{jenis?}/{merek?}', function ($jk='k01',$mrk='nokia') {
+    return "kode barang " . $jk . " dan nama barang " .$mrk;
 });
