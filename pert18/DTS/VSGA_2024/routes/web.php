@@ -57,3 +57,15 @@ Route::get('/pesandisini', function () {
     return '<h1> Pesan Disini </h1>';
 });
 Route::redirect('/contact', '/pesandisini');
+
+Route::get('/polinema/dosen', function () {
+    return '<h1> Daftar nama dosen </h1>';
+});
+
+Route::get('/polinema/tendik', function () {
+    return '<h1> Daftar nama tendik </h1>';
+});
+
+Route::get('/polinema/jurusan', function () {
+    return '<h1> Daftar nama jurusan </h1>';
+});
