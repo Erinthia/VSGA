@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\CRUDController;
 use App\Http\Controllers\PageControllerSatu;
 use App\Http\Controllers\pengajarController;
 use Illuminate\Support\Facades\Route;
@@ -109,5 +108,3 @@ Route::get('tabel-dosen', [pengajarController::class, 'tabelPengajar']);
 Route::get('blog-dosen', [pengajarController::class, 'blogPengajar']);
 
 Route:: get('pasar-buah', [PageControllerSatu::class, 'satu']);
-
-Route::get('crud', CRUDController::class);
