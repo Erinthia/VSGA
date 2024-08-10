@@ -4,6 +4,7 @@ use App\Http\Controllers\CRUDController;
 use App\Http\Controllers\PageControllerSatu;
 use App\Http\Controllers\pengajarController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -123,3 +124,4 @@ Route::resource('photos', PhotoController::class)->except([
 Route::get('/selamat', function () {
     return view ('hello', ['name' => 'Erinthia Dinda Pratiwi']);
 });
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
