@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\pengajarController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -101,3 +102,6 @@ Route::prefix('/admin')->group (function () {
 Route::fallback(function () {
     return "Maaf, halaman tidak ditemukan";
 });
+Route::get('daftar-dosen', [pengajarController::class, 'daftarPengajar']);
+Route::get('tabel-dosen', [pengajarController::class, 'tabelPengajar']);
+Route::get('blog-dosen', [pengajarController::class, 'blogPengajar']);
