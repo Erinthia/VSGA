@@ -48,3 +48,7 @@ Route::get('/kodebarang/{jenis?}/{merek?}', function ($jk='k01',$mrk='nokia') {
 Route::get('about', function () {
     return view ('about');
 })->name('about');
+
+Route::get('tampil', function () {
+    return view ('tampil');
+})->name('tampil');
