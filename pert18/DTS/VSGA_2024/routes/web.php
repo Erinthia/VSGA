@@ -97,3 +97,7 @@ Route::prefix('/admin')->group (function () {
         echo '<h1> Daftar nama jurusan </h1>';
     });
 });
+
+Route::fallback(function () {
+    return "Maaf, halaman tidak ditemukan";
+});
