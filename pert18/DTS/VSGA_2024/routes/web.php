@@ -44,3 +44,7 @@ Route::get('/posts/{post}/{comment}', function ($post, $comment) {
 Route::get('/kodebarang/{jenis?}/{merek?}', function ($jk='k01',$mrk='nokia') {
     return "kode barang " . $jk . " dan nama barang " .$mrk;
 });
+
+Route::get('about', function () {
+    return view ('about');
+})->name('about');
