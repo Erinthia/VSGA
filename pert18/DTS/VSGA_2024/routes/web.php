@@ -3,6 +3,7 @@
 use App\Http\Controllers\CRUDController;
 use App\Http\Controllers\PageControllerSatu;
 use App\Http\Controllers\pengajarController;
+use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -111,3 +112,10 @@ Route::get('blog-dosen', [pengajarController::class, 'blogPengajar']);
 Route:: get('pasar-buah', [PageControllerSatu::class, 'satu']);
 
 Route::resource('crud', CRUDController::class);
+
+Route::resource('photos', PhotoController::class)->only([
+    'index', 'show'
+]);
+Route::resource('photos', PhotoController::class)->except([
+    'create', 'store', 'update', 'destroy'
+]);
