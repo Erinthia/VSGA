@@ -32,3 +32,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return 'NIM: 2231740005, Nama: Erinthia Dinda Pratiwi';
 });
+
+Route::get('/user/{name}', function ($name) {
+    return 'Nama saya adalah ' . $name;
+});
