@@ -9,8 +9,12 @@ class LevelController extends Controller
 {
     public function index()
     {
-        DB::insert('insert into m_level (level_kode, level_nama, created_at) values(?, ?, ?)', ['CUS', 'Pelanggan', now()]);
+        // DB::insert('insert into m_level (level_kode, level_nama, created_at) values(?, ?, ?)', ['CUS', 'Pelanggan', now()]);
 
-        return 'insert data baru berhasil';
+        // return 'insert data baru berhasil';
+
+        // $row = DB::update('update m_level set level_nama = ? where level_kode = ?' , ['Customer', 'CUS']);
+        // return 'update data berhasil . jumlah data yang diupdate : ' . $row . 'baris';
+   
     }
 }
