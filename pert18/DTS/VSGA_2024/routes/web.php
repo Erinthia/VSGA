@@ -6,6 +6,7 @@ use App\Http\Controllers\pengajarController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LevelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -125,3 +126,4 @@ Route::get('/selamat', function () {
     return view ('hello', ['name' => 'Erinthia Dinda Pratiwi']);
 });
 Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
