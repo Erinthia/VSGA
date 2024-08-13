@@ -4,12 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\UserModel;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
     public function index(){
-        //coba akses model usermodel
-        $users = UserModel::all();
-        return view("user",['data'=>$users]);
+        //menambahkan data menggunakan ORM
+        $data =[
+            'username'=> 'erin',
+            'nama'=> 'eirn',
+            'password'=> Hash::make('12345'),
+            'user_id'=> 4,
+            'level_id'=> 1
+        ];
+        UserModel::insert($data);
+
+        //akses model usermodel
+        $user=UserModel::all();
+        return view('user', ['data'=>$user]);
+        
     }
 }
