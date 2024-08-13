@@ -19,11 +19,14 @@ class UserController extends Controller
         // ];
         // UserModel::insert($data);
 
-        $data=[
-            'nama'=>'dinda',
-        ];
-        UserModel::where('username', 'erin')->update($data);
+        //update data menggunakan ORM
+        // $data=[
+        //     'nama'=>'dinda',
+        // ];
+        // UserModel::where('username', 'erin')->update($data);
 
+        //hapus data menggunakan ORM
+        UserModel::where('username', 'erin')->delete();
         //akses model usermodel
         $user=UserModel::all();
         return view('user', ['data'=>$user]);
