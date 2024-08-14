@@ -47,4 +47,11 @@ class AnggotaController extends Controller
         return view ('tampilkan_anggota',['anggota'=>[$result]]);
     }
 
+    public function getWhere(){
+        $result = Anggota::where('nilai','>','3.3')
+        ->orderBy('nilai','desc')
+        ->get();
+        return view ('tampilkan_anggota',['anggota'=>$result]);
+
+    }
 }
