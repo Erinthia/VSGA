@@ -22,4 +22,13 @@ class AnggotaController extends Controller
         $anggota->save();
         echo"Data berhasil disimpan";
     }
+
+    public function update(){
+        $anggota = Anggota::find(1);
+        $anggota->nama = "Dono";
+        $anggota->nilai= "3.5";
+        $anggota->save();
+        echo"Data berhasil diupdate";
+    }  
+    
 }
