@@ -15,7 +15,7 @@ class AnggotaController extends Controller
     }
     public function insert(){
         $anggota = new Anggota;
-        $anggota->nip = "2231740005";
+        $anggota->nip = "22317405";
         $anggota->nama = "dinda";
         $anggota->tanggal_lahir = "2002-08-13";
         $anggota->nilai = "3.2";
