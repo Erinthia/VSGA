@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Anggota;
+use App\Http\Controllers\Controller;
+
+
 
 class AnggotaController extends Controller
 {
@@ -15,9 +18,9 @@ class AnggotaController extends Controller
     }
     public function insert(){
         $anggota = new Anggota;
-        $anggota->nip = "22317406";
-        $anggota->nama = "erin";
-        $anggota->tanggal_lahir = "2002-07-13";
+        $anggota->nip = "22317408";
+        $anggota->nama = "halim";
+        $anggota->tanggal_lahir = "2002-06-13";
         $anggota->nilai = "3.5";
         $anggota->save();
         echo"Data berhasil disimpan";
@@ -39,4 +42,9 @@ class AnggotaController extends Controller
         $result = Anggota::all();
         return view ('tampilkan_anggota',['anggotas'=>$result]);
     }
+    public function find(){
+        $result = Anggota::find(3);
+        return view ('tampilkan_anggota',['anggota'=>[$result]]);
+    }
+
 }
