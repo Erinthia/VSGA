@@ -35,4 +35,8 @@ class AnggotaController extends Controller
         $anggota->delete();
         echo"Data berhasil dihapus";
     }
+    public function all(){
+        $result = Anggota::all();
+        return view ('tampilkan_anggota',['anggotas'=>$result]);
+    }
 }
