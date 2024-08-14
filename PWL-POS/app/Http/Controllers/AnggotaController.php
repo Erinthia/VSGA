@@ -30,5 +30,9 @@ class AnggotaController extends Controller
         $anggota->save();
         echo"Data berhasil diupdate";
     }  
-    
+    public function delete(){
+        $anggota = Anggota::find(1);
+        $anggota->delete();
+        echo"Data berhasil dihapus";
+    }
 }
