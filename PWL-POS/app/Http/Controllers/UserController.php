@@ -28,7 +28,7 @@ class UserController extends Controller
         //hapus data menggunakan ORM
         UserModel::where('username', 'erin')->delete();
         //akses model usermodel
-        $user=UserModel::all();
+        $user=UserModel::with('level')->get();
         return view('user', ['data'=>$user]);
         
     }
