@@ -17,20 +17,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('Home');
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
+Route::get('/team', function () {
+    return view('team');
 });
 
-Route::get('/galery', function () {
-    return view('galery');
+Route::get('/project', function () {
+    return view('project');
 });
 
-Route::get('/kontak', function () {
-    return view('kontak');
+Route::get('/calender', function () {
+    return view('calender');
+});
+
+Route::get('/report', function () {
+    return view('report');
 });
 
 Route::get('/halaman', function () {
