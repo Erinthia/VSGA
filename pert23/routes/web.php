@@ -21,6 +21,14 @@ Route::get('/home', function () {
     return view('Home');
 });
 
-Route::get('/about', function () {
-    return view('About');
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/galery', function () {
+    return view('galery');
+});
+
+Route::get('/kontak', function () {
+    return view('kontak');
 });
