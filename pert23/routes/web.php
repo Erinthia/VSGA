@@ -32,3 +32,7 @@ Route::get('/galery', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 });
+
+Route::get('/halaman', function () {
+    return view('halaman');
+});

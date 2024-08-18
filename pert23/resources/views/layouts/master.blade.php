@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="container">
-
+            @yield('isi')
         </div>
     </body>
 </html>
