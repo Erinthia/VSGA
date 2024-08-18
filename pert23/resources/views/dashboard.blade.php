@@ -1,1 +1,1 @@
-<x-dashboard></x-dashboard>
+<x-layout><h1>Halaman Dashboard</h1></x-layout>

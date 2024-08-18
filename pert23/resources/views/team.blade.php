@@ -1,1 +1,1 @@
-<h1>Halaman team</h1>
+<x-layout><h1>Halaman Team</h1></x-layout>

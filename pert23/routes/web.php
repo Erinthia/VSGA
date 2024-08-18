@@ -29,8 +29,8 @@ Route::get('/project', function () {
     return view('project');
 });
 
-Route::get('/calender', function () {
-    return view('calender');
+Route::get('/calendar', function () {
+    return view('calendar');
 });
 
 Route::get('/report', function () {

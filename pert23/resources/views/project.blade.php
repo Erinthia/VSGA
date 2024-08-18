@@ -1,1 +1,1 @@
-<h1>Halaman project</h1>
+<x-layout><h1>Halaman Project</h1></x-layout>

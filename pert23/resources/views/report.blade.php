@@ -1,1 +1,1 @@
-<h1>Halaman repor</h1>
+<x-layout><h1>Halaman Report</h1></x-layout>

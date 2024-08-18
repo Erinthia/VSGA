@@ -1,1 +1,1 @@
-<h1>Halaman kalender</h1>
+<x-layout><h1>Halaman Calender</h1></x-layout>
