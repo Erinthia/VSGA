@@ -21,9 +21,9 @@ Route::get('/dashboard', function () {
     return view('home');
 });
 
-Route::get('/team', function () {
-    return view('team');
-});
+Route::get('/team', [App\Http\Controllers\UserController::class, 'index']);
+
+Route::get('/team/data', [App\Http\Controllers\UserController::class, 'getUsers']) ->name('team.data');
 
 Route::get('/project', function () {
     return view('project');
