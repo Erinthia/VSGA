@@ -4,6 +4,7 @@
         <title></title>
     </head>
     <body>
+        @include('partials.navbar')
         <div class="container">
             @yield('isi')
         </div>
